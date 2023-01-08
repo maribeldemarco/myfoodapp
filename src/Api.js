@@ -5,12 +5,12 @@ function Api ()
  const [ resultado, setResultado]= useState([]);
     
  useEffect(() => {
-    fetch('https://rickandmortyapi.com/api/character')
+    fetch('https://api.thecatapi.com/v1/images/search?limit=10')
         .then(response => response.json())
-        .then(response => { console.log(response);
+        .then(response2 => { console.log(response2);
 
-            console.log(response.results)
-            setResultado(response.results)
+            console.log(response2.results)
+            setResultado(response2)
             
  })
         .catch(err => console.error(err));
@@ -19,16 +19,23 @@ function Api ()
     return (
 
    <div>
-    {resultado.map((post) => {
+      <div className=''>
+      <div className='catpics' >
+    {
+    resultado.slice(0,8).map((elemento) => {
          return (
-            <div className="post-card" key={post.id}>
-               <h2 className="post-title">{post.name}</h2>
-               <p className="post-body"><img src={post.image}></img></p>
+
+            <div className='imagesize' key={elemento.id}>   
+            <div><img className="image" src={elemento.url} ></img>
             </div>
+            </div>
+    
+            
          );
       })}
    </div>
-    )
+   </div>
+</div>    )
 }
 
 

@@ -1,9 +1,26 @@
+*{box-sizing: border-box;}
+
 .nav-abath { 
    width: 100% !important;
-
     }
 
+
+    
 .nav-abath ul {   display: flex !important;
      justify-content: center!important;
      column-gap: 8rem;
     width: 100% !important;}
+
+    .image {  max-width: 150px;
+    height: 300px;
+    object-fit: cover;
+    }
+
+.imagesize{width: 12.5%;}
+
+    .catpics { 
+        margin-top: 10px;
+        display: flex !important;
+      width: 100%;
+      flex-wrap: wrap;
+    }
