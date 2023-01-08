@@ -16,6 +16,9 @@ function Api ()
         .catch(err => console.error(err));
         
     }, []);
+
+
+
     return (
 
    <div>
@@ -23,14 +26,16 @@ function Api ()
       <div className='catpics' >
     {
     resultado.slice(0,8).map((elemento) => {
+      console.log (elemento.breeds[0].name)
 
-       console.log (elemento.breeds)
          return (
 
             <div className='imagesize' key={elemento.id}>   
             <div><img className="image" src={elemento.url} ></img>
-            <div><p>{elemento.breeds.id}</p></div>
-            
+            <p> Nombre:{(elemento.breeds[0].id).toUpperCase()}</p>
+            <p> Edad:{elemento.breeds[0].energy_level}</p>
+
+
                         </div>
             </div>
     
