@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
 
+
 function Api ()
 {
  const [ resultado, setResultado]= useState([]);
@@ -30,12 +31,12 @@ function Api ()
 
          return (
             <div className='imagesize' key={elemento.id}>   
-            <div className='fotosgatos'>
+            <div className="fotosgatos card">
                <img className="image" src={elemento.url} ></img>
             <p> Nombre:{(elemento.breeds[0].id).toUpperCase()}</p>
             <p> Edad:{elemento.breeds[0].energy_level}</p>
-
-
+            <a href="#" className=" botones btn btn-primary">Más info</a>
+            <a href="#" className=" botones btn btn-primary">Adoptame!</a>
                         </div>
             </div>
     

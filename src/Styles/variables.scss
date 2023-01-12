@@ -15,7 +15,7 @@ $tamanoletraheader: 1.5rem;
      column-gap: 8rem;
     width: 100% !important;}
 
-    .image {  max-width: 100%;
+    .image {  width: 100%;
  height: 300px;
     object-fit: cover;
     }
@@ -37,6 +37,8 @@ align-items:  center ;
 
 }
 
+.botones {margin-bottom: 1rem !important;}
+
 .nav-link{font-size: $tamanoletraheader;}
 
 .icono { display: block;
@@ -44,3 +46,24 @@ align-items:  center ;
   margin-right: auto;
   width: 50px;
   }
+  
+  .card {
+    margin:15px !important;
+  }
+
+  //media querie
+  @media screen and (max-width: 1024px){
+  .imagesize{width: 40%;}
+  .card {
+    margin:0px !important;
+    margin-top: 2rem !important;
+  }
+  }
+
+  @media all and (min-width: 1024px) and (max-width: 1280px){
+    .imagesize{width: 33.333%;}
+    }
+
+    @media screen and (min-width: 1280px){
+      .imagesize{width: 25%;}
+      }
