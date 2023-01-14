@@ -1,4 +1,6 @@
-
+import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import React from "react";
 
 
 function Header() {
@@ -14,16 +16,16 @@ function Header() {
     <div  className="collapse navbar-collapse nav-abath" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <NavLink to="/" className="nav-link active" >Home</NavLink>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Quienes somos</a>
+        <NavLink to="/quienessomos" className="nav-link" >Quienes somos</NavLink>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Michis en adopción</a>
+        <NavLink to="/michisenadopcion" className="nav-link" >Michis en adopción</NavLink>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Contactanos!</a>
+        <NavLink to="/contactanos" className="nav-link" >Contactanos!</NavLink>
         </li>
       </ul>
     </div>

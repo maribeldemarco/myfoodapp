@@ -51,6 +51,16 @@ align-items:  center ;
     margin:15px !important;
   }
 
+  .spinnersize {
+
+    height: 300px;
+    width: 300px;
+    display: block !important;
+    margin: auto !important;
+  }
+
+  .spinnermargen { margin-top: 100px !important;}
+
   //media querie
   @media screen and (max-width: 1024px){
   .imagesize{width: 40%;}

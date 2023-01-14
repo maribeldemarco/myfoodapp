@@ -3,13 +3,21 @@ import Header from './Header';
 import Api from './Api';
 import { Routes, Route } from 'react-router-dom';
 import Contactanos from './Contactanos';
+import Gatosenadopcion from './Gatosenadopcion';
+import Home from './Home';
+import Quienessomos from './Quienessomos';
 
 function App() {
   return (
   <div>
- 
-  <Header/>
-   <Api/>
+    <Routes>
+    <Route path="/" element={<Home />} />
+          <Route path="/contactanos" element={<Contactanos />} />
+
+          <Route path="/michisenadopcion" element={<Gatosenadopcion />} />
+          <Route path="/quienessomos" element={<Quienessomos />} />
+       </Routes>
+  
   </div>
     )
     
