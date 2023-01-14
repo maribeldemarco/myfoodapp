@@ -1,8 +1,17 @@
 import {useEffect, useState} from 'react';
+import misGatitos from './Gatitosinfo';
+import Alert from 'react-bootstrap/Alert';
+import Button from 'react-bootstrap/Button';
+import {render} from 'react-dom';
+import Gatospropiedades from './Gatospropiedades';
+
 
 
 function Api ()
 {
+   
+
+
  const [ resultado, setResultado]= useState([]);
  const [ spinner, setLoading]= useState(null);
  useEffect(() => {
@@ -54,8 +63,10 @@ function Api ()
                <img className="image" src={elemento.url} ></img>
             <p> Nombre:{(elemento.breeds[0].id).toUpperCase()}</p>
             <p> Edad:{elemento.breeds[0].energy_level}</p>
-            <a href="#" className=" botones btn btn-primary">Más info</a>
-            <a href="#" className=" botones btn btn-primary">Adoptame!</a>
+            <Gatospropiedades/>
+            
+            <a href="#" className=" botones btn btn-primary mt-3">Adoptame!</a>
+      
                         </div>
             </div>
         
