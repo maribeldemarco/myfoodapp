@@ -1,8 +1,5 @@
 import {useEffect, useState} from 'react';
 import misGatitos from './Gatitosinfo';
-import Alert from 'react-bootstrap/Alert';
-import Button from 'react-bootstrap/Button';
-import {render} from 'react-dom';
 import Gatospropiedades from './Gatospropiedades';
 
 
@@ -31,7 +28,7 @@ function Api ()
     }, []);
 
    
-
+    let Myarray= resultado.slice(0,16)
 
     return (
 
@@ -54,8 +51,10 @@ function Api ()
       
     
     {
-    resultado.slice(0,16).map((elemento) => {
-      console.log (elemento.breeds[0].name)
+    Myarray.map((elemento) => {
+
+      console.log(Myarray.indexOf(elemento))
+   
 
          return (
             <div className='imagesize' key={elemento.id}>   
@@ -63,8 +62,8 @@ function Api ()
                <img className="image" src={elemento.url} ></img>
             <p> Nombre:{(elemento.breeds[0].id).toUpperCase()}</p>
             <p> Edad:{elemento.breeds[0].energy_level}</p>
-            <Gatospropiedades/>
-            
+            <Gatospropiedades index={Myarray.indexOf(elemento)}/>
+   
             <a href="#" className=" botones btn btn-primary mt-3">Adoptame!</a>
       
                         </div>
