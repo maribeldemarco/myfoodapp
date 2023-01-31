@@ -12,7 +12,7 @@ function Gatospropiedades(props) {
   
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="warning btn-lg" onClick={handleShow}>
         Quiero más info
       </Button>
 
@@ -22,7 +22,6 @@ function Gatospropiedades(props) {
         </Modal.Header>
         <Modal.Body>
         
-     
     
 
               <div className='imagesize' >   
@@ -31,19 +30,10 @@ function Gatospropiedades(props) {
             <p> Caracter: {misGatitos[props.index].caracter}</p>
             <p> Genero: {misGatitos[props.index].genero}</p>
 
-          
-            
-            
       
                         </div>
             </div>
-        
-    
-        
-    
-      
-
-
+       
 
         </Modal.Body>
         <Modal.Footer>

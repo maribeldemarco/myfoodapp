@@ -53,18 +53,17 @@ function Api ()
     {
     Myarray.map((elemento) => {
 
-      console.log(Myarray.indexOf(elemento))
-   
+    
 
          return (
-            <div className='imagesize' key={elemento.id}>   
-            <div className="fotosgatos card">
-               <img className="image" src={elemento.url} ></img>
+            <div className='imagesize ' key={elemento.id}>   
+            <div className="fotosgatos card ">
+               <img className="image mt-4" src={elemento.url} ></img>
             <p> Nombre:{(elemento.breeds[0].id).toUpperCase()}</p>
             <p> Edad:{elemento.breeds[0].energy_level}</p>
             <Gatospropiedades index={Myarray.indexOf(elemento)}/>
    
-            <a href="#" className=" botones btn btn-primary mt-3">Adoptame!</a>
+            <a href="#" className=" botones btn btn-warning mt-3 btn-lg">Adoptame!</a>
       
                         </div>
             </div>

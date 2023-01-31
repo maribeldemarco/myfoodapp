@@ -1,4 +1,5 @@
 import Header from "./Header";
+import Presentacion from "./Presentacion";
 
 function Home ()
 {
@@ -8,7 +9,7 @@ function Home ()
 <div>
 
     <Header/>
-home
+ <Presentacion/>
 </div>
 
     )
