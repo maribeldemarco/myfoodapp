@@ -15,7 +15,7 @@ $tamanoletraheader: 1.5rem;
      column-gap: 8rem;
     width: 100% !important;}
 
-    .image {  width: 100%;
+    .image {  width:  100%!important;
  height: 300px;
     object-fit: cover;
     }
@@ -65,7 +65,7 @@ align-items:  center ;
 
 .card img {width: 300px;
 margin: auto;}
-
+//.image {border-radius: 5px;}
 
  
 
