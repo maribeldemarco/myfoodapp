@@ -59,8 +59,8 @@ function Api ()
             <div className='imagesize ' key={elemento.id}>   
             <div className="fotosgatos card ">
                <img className="image mt-4" src={elemento.url} ></img>
-            <p> Nombre:{(elemento.breeds[0].id).toUpperCase()}</p>
-            <p> Edad:{elemento.breeds[0].energy_level}</p>
+            <p className='datosanimales'> Nombre:{(elemento.breeds[0].id).toUpperCase()}</p>
+            <p className='datosanimales'> Edad:{elemento.breeds[0].energy_level}</p>
             <Gatospropiedades index={Myarray.indexOf(elemento)}/>
    
             <a href="#" className="boton btn btn-warning mt-3 btn-lg">Adoptame!</a>

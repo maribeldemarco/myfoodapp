@@ -26,9 +26,9 @@ function Gatospropiedades(props) {
 
               <div className='imagesize' >   
             <div >
-   
-            <p> Caracter: {misGatitos[props.index].caracter}</p>
-            <p> Genero: {misGatitos[props.index].genero}</p>
+            <p> Género: {misGatitos[props.index].género}</p>
+            <p> Carácter: {misGatitos[props.index].carácter}</p>
+            
 
       
                         </div>
