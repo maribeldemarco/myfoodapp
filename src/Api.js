@@ -38,7 +38,7 @@ function Api ()
     
 
    <div>
-<div className='margintopapi'></div>
+<div className='margintop-api'></div>
 <img className='fondoapi' src= "apifondo.png"></img>
 {
             spinner===null ? <div class="text-center spinnermargen">

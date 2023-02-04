@@ -21,7 +21,7 @@ function Presentacion ()
       <img src="cat1.jpg" class="card-img-top" alt="..."/>
       <div class="card-body">
         <h4 class="card-title text-center display-3 text-muted fs-1" ><strong>Adopciones </strong></h4>
-        <p class="card-text fs-4 mt-4 mb-4 text-center">Podes conocer nuestros michis en adopcion.Ellos necesitan de un hogar lleno de cariño y comodidades!</p>
+        <p class="card-text fs-4 mt-4 mb-4 text-center"> Conocé a todos nuestros michis en adopción. Ellos necesitan de un hogar lleno de cariño donde vivan felices!</p>
         <div class="text-center">
         <button type="button" className=" boton btn btn-warning btn-lg mt-2">Quiero adoptar!</button>
       </div>
@@ -38,7 +38,7 @@ function Presentacion ()
       <img src="cat3.jpg" class="card-img-top" alt="..."/>
       <div class="card-body">
         <h5 class="card-title text-center  display-4 h1 text-muted fs-1"><strong>Voluntariado</strong></h5>
-        <p class="card-text fs-4 mt-4 mb-4 text-center">Podes ayudarnos en el refugio de distintas formas: alimentando, aseando y dando cariño. No olvides que ellos te necesitan!</p>
+        <p class="card-text fs-4 mt-4 mb-4 text-center">Colaborá con el refugio de distintas formas: alimentando, aseando y dando mucho cariño. &nbsp; No olvides que ellos te necesitan!</p>
         <div class="text-center">
         <button type="button" className=" boton btn btn-warning btn-lg mt-2">Quiero ser voluntario!</button>
       </div>

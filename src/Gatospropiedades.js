@@ -18,7 +18,7 @@ function Gatospropiedades(props) {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Caracteristicas</Modal.Title>
+          <Modal.Title>Características del michi</Modal.Title>
         </Modal.Header>
         <Modal.Body>
         
