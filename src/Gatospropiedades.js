@@ -12,7 +12,7 @@ function Gatospropiedades(props) {
   
   return (
     <>
-      <Button variant="warning btn-lg" onClick={handleShow}>
+      <Button className="boton warning btn-lg" onClick={handleShow}>
         Quiero más info
       </Button>
 

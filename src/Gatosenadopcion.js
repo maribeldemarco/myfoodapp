@@ -14,7 +14,6 @@ function Gatosenadopcion(){
 </div>
 
 
-
     )
 }
 

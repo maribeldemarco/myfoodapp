@@ -49,10 +49,10 @@ function Api ()
       
       <div className='catpics' >
       
-    
-    {
-    Myarray.map((elemento) => {
 
+    
+    { 
+    resultado.slice(0,16).map((elemento) => {
     
 
          return (
@@ -63,7 +63,7 @@ function Api ()
             <p> Edad:{elemento.breeds[0].energy_level}</p>
             <Gatospropiedades index={Myarray.indexOf(elemento)}/>
    
-            <a href="#" className=" botones btn btn-warning mt-3 btn-lg">Adoptame!</a>
+            <a href="#" className="boton btn btn-warning mt-3 btn-lg">Adoptame!</a>
       
                         </div>
             </div>
@@ -71,7 +71,8 @@ function Api ()
     
             
          );
-    
+         
+
       })}
    </div>
    </div>

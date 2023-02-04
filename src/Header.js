@@ -6,10 +6,11 @@ import React from "react";
 function Header() {
     return (
     <div>
-    <nav  class="navbar navbar-expand-lg bg-body-tertiary bg-dark-subtle" >
+
+    <nav  class="navbar navbar-expand-lg bg-body-tertiary bg-white" >
   <div class="container-fluid">
   
-     <a class="navbar-brand" href="#"> <img className="icono" src="./happy.png"/> <p> RefuCat</p></a>
+     <a class="navbar-brand" href="#"> <img className="icono" src="./happy.png"/> <p className="iconotitulo"> RefuCat</p></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -31,6 +32,8 @@ function Header() {
     </div>
   </div>
 </nav>
+
+
 
       </div>
 

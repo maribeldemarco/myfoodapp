@@ -1,6 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 $tamanoletraheader: 1.5rem;
 
-*{box-sizing: border-box;}
+*{box-sizing: border-box;
+  font-family: 'Poppins', sans-serif !important;}
 
 .nav-abath { 
    width: 100% !important;
@@ -34,17 +38,23 @@ $tamanoletraheader: 1.5rem;
     .fotosgatos {display: flex ;
  flex-direction: column ;
 align-items:  center ;
-
+padding-bottom: 20px;
 }
 
 .botones {margin-bottom: 1rem !important;}
+.presentacion {width: 100%;
 
+margin-top: 50px;}
 .nav-link{font-size: $tamanoletraheader;}
 
+
+.iconotitulo {font-size: 30px;}
 .icono { display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50px;
+  margin-top: 10px;
+  margin-left: 30px;
   }
   
   .card {
@@ -61,7 +71,11 @@ align-items:  center ;
 
   .spinnermargen { margin-top: 100px !important;}
 
+.fondo {width: 100%;}
 
+.boton {background-color: #f8c164 !important;
+border: none !important;
+color: black !important;}
 
 .card img {width: 300px;
 margin: auto;}

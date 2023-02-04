@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Presentacion from "./Presentacion";
+import Fondo from "./Fondo";
 
 function Home ()
 {
@@ -9,6 +10,7 @@ function Home ()
 <div>
 
     <Header/>
+    <Fondo/>
  <Presentacion/>
 </div>
 
