@@ -8,12 +8,17 @@ $tamanoletraheader: 1.5rem;
 
 .nav-abath { 
    width: 100% !important;
-    }
+ 
+  }
 
+
+  .barranavegacion {padding: 0 !important;}
     a.navbar-brand {padding: 0;
       vertical-align: text-bottom !important;}
-      
-    
+.navbar-nav {background-color: #f2eff1;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}    
 .nav-abath ul {   display: flex !important;
      justify-content: center!important;
      column-gap: 8rem;
@@ -48,14 +53,22 @@ margin-top: 66px;}
 .nav-link{font-size: $tamanoletraheader;}
 
 
-.iconotitulo {font-size: 30px;}
+.iconotitulo {font-size: 30px;
+margin-top: 0.7rem;}
 .icono { display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50px;
   margin-top: 10px;
   margin-left: 30px;
-  }
+ margin: auto !important;
+ margin-top: 1rem !important;
+}
+
+
+
+.navbar-brand {margin-right: 0px !important;
+}
   
   .card {
     color: #443f3f;
@@ -74,8 +87,17 @@ margin-top: 66px;}
 
   .spinnermargen { margin-top: 100px !important;}
 
-.fondo {width: 100%;}
+.fondo {width: 100%;
+box-sizing: border-box !important;}
 
+.fondoapi {width: 100% !important;
+
+}
+
+.margintopapi{width: 100%;
+height: 100px;
+background-color: #f2eff1;}
+.container-fluid {padding: 0px !important;}
 .boton {background-color: #f8c164 !important;
 border: none !important;
 color: black !important;}
