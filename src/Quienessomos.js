@@ -1,16 +1,15 @@
 import Header from "./Header";
 
-function Quienessomos ()
-{
+function Quienessomos() {
 
 
     return (
-<div>
+        <div>
 
-    <Header/>
-    Quienes somos
+            <Header />
+            Quienes somos
 
-</div>
+        </div>
 
     )
 }

@@ -28,7 +28,7 @@ $tamanoletraheader: 1.5rem;
     object-fit: cover;
     }
 
-.imagesize{width: 12.5%;}
+.imagesize{width: 12.5% ;}
 
     .catpics { 
         margin-top: 10px;
@@ -103,6 +103,12 @@ background-color: #f2eff1;
 border: none !important;
 color: black !important;}
 
+.boton:hover {
+  background-color: #e29e29 !important;
+}
+
+
+
 
 .card {height:fit-content !important;
 }
@@ -145,3 +151,8 @@ margin: auto;}
       .datosanimales:first-of-type {
         margin-top: 1rem;
       }
+
+ 
+   .formulario {width: 70%;
+  margin: auto;
+margin-top: 3rem;}

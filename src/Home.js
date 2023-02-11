@@ -2,17 +2,16 @@ import Header from "./Header";
 import Presentacion from "./Presentacion";
 import Fondo from "./Fondo";
 
-function Home ()
-{
+function Home() {
 
 
     return (
-<div>
+        <div>
 
-    <Header/>
-    <Fondo/>
- <Presentacion/>
-</div>
+            <Header />
+            <Fondo />
+            <Presentacion />
+        </div>
 
     )
 }

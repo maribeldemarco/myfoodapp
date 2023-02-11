@@ -1,15 +1,15 @@
 import React from "react";
 import Header from "./Header";
 
-function Contactanos(){
+function Contactanos() {
 
-return (
+    return (
 
-    <div>
-        <Header/>
-        holis
-    </div>
-);
+        <div>
+            <Header />
+            contactanos
+        </div>
+    );
 
 }
 

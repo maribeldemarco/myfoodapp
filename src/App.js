@@ -6,21 +6,24 @@ import Contactanos from './Contactanos';
 import Gatosenadopcion from './Gatosenadopcion';
 import Home from './Home';
 import Quienessomos from './Quienessomos';
+import Prueba from './Prueba';
+import Pruebacrud from './Pruebacrud';
+
 
 function App() {
   return (
-  <div>
-    <Routes>
-    <Route path="/" element={<Home />} />
-          <Route path="/contactanos" element={<Contactanos />} />
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contactanos" element={<Contactanos />} />
+        <Route path="/michisenadopcion" element={<Gatosenadopcion />} />
+        <Route path="/quienessomos" element={<Quienessomos />} />
+        <Route path="/prueba" element={<Pruebacrud />} />
+      </Routes>
 
-          <Route path="/michisenadopcion" element={<Gatosenadopcion />} />
-          <Route path="/quienessomos" element={<Quienessomos />} />
-       </Routes>
-  
-  </div>
-    )
-    
+    </div>
+  )
+
 }
 
 export default App;

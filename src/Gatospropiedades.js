@@ -9,7 +9,7 @@ function Gatospropiedades(props) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  
+
   return (
     <>
       <Button className="boton warning btn-lg" onClick={handleShow}>
@@ -21,26 +21,26 @@ function Gatospropiedades(props) {
           <Modal.Title>Características del michi</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-        
-    
 
-              <div className='imagesize' >   
+
+
+          <div className='imagesize' >
             <div >
-            <p> Género: {misGatitos[props.index].género}</p>
-            <p> Carácter: {misGatitos[props.index].carácter}</p>
-            
+              <p> Género: {misGatitos[props.index].género}</p>
+              <p> Carácter: {misGatitos[props.index].carácter}</p>
 
-      
-                        </div>
+
+
             </div>
-       
+          </div>
+
 
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Cerrar
           </Button>
-          
+
         </Modal.Footer>
       </Modal>
     </>

@@ -1,15 +1,17 @@
-function Card1(){
 
 
-return(
+function Card1() {
 
-<div>
 
-<img className="presentacion" src ="presentacion.png"/>
+    return (
 
-</div>
+        <div>
 
-)
+            <img className="presentacion" src="presentacion.png" />
+
+        </div>
+
+    )
 
 
 }
