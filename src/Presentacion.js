@@ -36,12 +36,6 @@ function Presentacion() {
 
 
 
-
-
-
-
-
-
   return (
     <div>
 
@@ -62,9 +56,6 @@ function Presentacion() {
 
 
 
-
-
-
                 <div class="col">
                   <div class="card p-4" >
                     <img src={elemento.imagen} class="card-img-top" alt="..." />
@@ -81,13 +72,7 @@ function Presentacion() {
 
 
 
-
-
-
-
               </div>
-
-
 
 
 
