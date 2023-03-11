@@ -6,7 +6,7 @@ function Fondo() {
     return (
 
         <div>
-            <img className="fondo" src="fondo.png" />
+            <img className="fondo" src="fondo.png" alt="fondo" />
 
 
         </div>

@@ -1,12 +1,9 @@
 import './Styles/App.scss';
-import Header from './Header';
-import Api from './Api';
 import { Routes, Route } from 'react-router-dom';
 import Contactanos from './Contactanos';
 import Gatosenadopcion from './Gatosenadopcion';
 import Home from './Home';
 import Quienessomos from './Quienessomos';
-import Prueba from './Prueba';
 import Pruebacrud from './Voluntarios';
 
 

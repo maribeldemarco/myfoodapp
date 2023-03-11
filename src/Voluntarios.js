@@ -161,6 +161,7 @@ function Voluntarios() {
 
 
 </div>
+<div class ="contenedorformularioycrud">
         
         <div className="formulario">
 
@@ -232,7 +233,7 @@ function Voluntarios() {
         
         
         
-        
+        </div> 
         </div>
 
     )

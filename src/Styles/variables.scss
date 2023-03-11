@@ -38,9 +38,9 @@ textarea {margin-top: 1rem;
   
 }
 
-.form-control {width: 1309.81px !important;
+.form-control {width: 90%!important;
 margin: auto !important;
-margin-top: 1rem !important;}
+margin-top: 2rem !important;}
 
   
     
@@ -59,16 +59,21 @@ margin-top: 1rem !important;}
  flex-direction: column ;
 align-items:  center ;
 padding-bottom: 20px;
-
 }
 
 .comentarios {padding: 2rem;}
 .centrado {text-align: center;
-margin-bottom: 1rem;}
+margin-bottom: 1rem;
+}
 
 .formulariodecontacto {width:80%;
 
 margin: auto;}
+
+
+
+
+.form-control {width: 100% !important;}
 
 .botones {margin-bottom: 1rem !important;}
 .presentacion {width: 100%;
@@ -82,7 +87,11 @@ margin-top: 66px;}
 color:black !important;
 }
 
-.margengeneralformulario { margin-top: 4rem !important;}
+.margengeneralformulario { margin-top: 4rem !important;
+}
+
+.contenedorformularioycrud{width: 70% !important;
+  margin: 0 auto;}
 
 
 .card-header {margin-bottom: 2rem !important;}
@@ -196,4 +205,7 @@ margin: auto;}
  
    .formulario {width:97%;
   margin: auto;
-margin-top: 3rem;}
+margin-top: 3rem;
+background-color: #f2eff1;
+border-radius: 5px;
+padding: 2rem;}

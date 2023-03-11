@@ -5,6 +5,11 @@ function Formulario() {
     return ( 
 
         <div>
+
+            <br>
+            </br>
+
+<img className="fondo" src="contacto.png" alt="fondo" />
 <div className="margengeneralformulario">
 
 
@@ -37,6 +42,14 @@ function Formulario() {
               </label>
               <input type="text" name="apellido" className="form-control" id="validationCustom02" placeholder="Escribe tu apellido" required />
               <div className="invalid-feedback"><p>Por favor escribe tu apellido</p></div>
+            </div>
+
+            <div className="mb-3  text-center">
+              <label htmlFor="validationCustom02" className="form-label letrascel">
+                Gato 
+              </label>
+              <input type="text" name="gato" className="form-control" id="validationCustom02" placeholder="Escribe el nombre del gato que quieras adoptar" required />
+              <div className="invalid-feedback"><p>Por favor escribe como se llama el gato que te interesa adoptar</p></div>
             </div>
 
             <div className="mb-3  text-center">

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import misGatitos from './Gatitosinfo';
 import Gatospropiedades from './Gatospropiedades';
+import { Link } from 'react-router-dom';
 
-import { Link } from "react-router-dom";
 
 
 function Api() {
@@ -70,7 +70,7 @@ function Api() {
                                     <p className='datosanimales'> Edad:{elemento.breeds[0].energy_level}</p>
                                     <Gatospropiedades index={Myarray.indexOf(elemento)} />
 
-                                    <a href="#" className="boton btn btn-warning mt-3 btn-lg">Adoptame!</a>
+                                    <Link to="/contactanos" className="boton btn btn-warning mt-3 btn-lg">Adoptame!</Link>
 
                                  </div>
                               </div>
