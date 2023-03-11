@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import misGatitos from './Gatitosinfo';
 import Gatospropiedades from './Gatospropiedades';
 
+import { Link } from "react-router-dom";
 
 
 function Api() {

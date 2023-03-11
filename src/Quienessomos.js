@@ -1,4 +1,7 @@
 import Header from "./Header";
+import Prueba from "./Prueba";
+import Voluntarios from "./Voluntarios";
+import Pruebacrud from "./Voluntarios";
 
 function Quienessomos() {
 
@@ -7,7 +10,7 @@ function Quienessomos() {
         <div>
 
             <Header />
-            Quienes somos
+            <Voluntarios/>
 
         </div>
 

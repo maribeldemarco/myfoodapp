@@ -7,7 +7,7 @@ import Gatosenadopcion from './Gatosenadopcion';
 import Home from './Home';
 import Quienessomos from './Quienessomos';
 import Prueba from './Prueba';
-import Pruebacrud from './Pruebacrud';
+import Pruebacrud from './Voluntarios';
 
 
 function App() {

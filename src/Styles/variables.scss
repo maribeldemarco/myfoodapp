@@ -34,7 +34,14 @@ margin-top: 1rem;}
 
 textarea {margin-top: 1rem;
   resize: none; 
+
+  
 }
+
+.form-control {width: 1309.81px !important;
+margin: auto !important;
+margin-top: 1rem !important;}
+
   
     
 .imagesize{width: 12.5% ;}
@@ -52,18 +59,33 @@ textarea {margin-top: 1rem;
  flex-direction: column ;
 align-items:  center ;
 padding-bottom: 20px;
+
 }
 
 .comentarios {padding: 2rem;}
 .centrado {text-align: center;
 margin-bottom: 1rem;}
-.formulario { width: 90%;}
+
+.formulariodecontacto {width:80%;
+
+margin: auto;}
+
 .botones {margin-bottom: 1rem !important;}
 .presentacion {width: 100%;
 
 margin-top: 66px;}
 .nav-link{font-size: $tamanoletraheader;}
 
+.cuadroformulario { 
+
+  background-color: #f2eff1 !important;
+color:black !important;
+}
+
+.margengeneralformulario { margin-top: 4rem !important;}
+
+
+.card-header {margin-bottom: 2rem !important;}
 
 .iconotitulo {font-size: 30px;
 margin-top: 0.7rem;}
@@ -77,7 +99,9 @@ margin-top: 0.7rem;}
  margin-top: 1rem !important;
 }
 
-
+.cover { width: 200px;
+  height: 300px;
+  object-fit: cover;}
 
 .navbar-brand {margin-right: 0px !important;
 }
@@ -85,6 +109,10 @@ margin-top: 0.7rem;}
   .card {
     color: #443f3f;
     margin:15px !important;
+  }
+
+  .voluntariosCard{
+    border-style: none;
   }
   .nav-link {color: #443f3f !important}
 
@@ -120,7 +148,7 @@ color: black !important;}
   background-color: #e29e29 !important;
 }
 
-
+.botoncentrado {margin: auto !important;}
 
 
 .card {height:fit-content !important;
@@ -166,6 +194,6 @@ margin: auto;}
       }
 
  
-   .formulario {width: 70%;
+   .formulario {width:97%;
   margin: auto;
 margin-top: 3rem;}

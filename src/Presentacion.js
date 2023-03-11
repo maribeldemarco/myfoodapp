@@ -1,6 +1,12 @@
 
+
+import { Link } from "react-router-dom";
+
 function Presentacion() {
 
+ 
+
+  
   const cardsPpal = [
 
 
@@ -63,8 +69,7 @@ function Presentacion() {
                       <h4 class="card-title text-center display-3 text-muted fs-1" ><strong>{elemento.titulo} </strong></h4>
                       <p class="card-text fs-4 mt-4 mb-4 text-center"> {elemento.subtitulo}</p>
                       <div class="text-center">
-                        <button type="button" className=" boton btn btn-warning btn-lg mt-2">{elemento.button}</button>
-                      </div>
+                      <Link to="/contactanos" className=" boton btn btn-warning btn-lg mt-2">{elemento.button}</Link>                      </div>
                     </div>
                   </div>
                 </div>

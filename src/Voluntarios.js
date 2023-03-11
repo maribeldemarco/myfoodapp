@@ -4,7 +4,62 @@ import { v4 as uuid } from "uuid";
 import { useEffect } from "react";
 
 
-function Pruebacrud() {
+function Voluntarios() {
+
+
+    const cardsPpal = [
+
+
+        {
+          id: 1,
+          nombre: 'Elvira Montañez',
+          imagen:'fotovoluntario1.jpg',
+       
+        },
+        {
+          id: 2,
+          nombre: 'Maria Perez',
+          imagen:
+            'fotovoluntario2.jpg',
+         
+    
+        },
+        {
+          id: 3,
+          nombre: 'Nicolás Dominguez',
+          imagen:
+            'fotovoluntario3.jpg',
+         
+        },
+    
+
+        {
+            id: 4,
+            nombre: 'Miriam Dominguez',
+            imagen:
+              'fotovoluntario4.jpg',
+           
+          },
+
+          {
+            id: 5,
+            nombre: 'Cesar Rossi',
+            imagen:
+              'fotovoluntario5.jpg',
+           
+          },
+      
+          {
+            id: 6,
+            nombre: 'Sebastián Suarez',
+            imagen:'fotovoluntario6.jpg',
+           
+          },
+      
+        ];
+    
+
+
 
     let id = "";
 
@@ -49,47 +104,70 @@ function Pruebacrud() {
     }
 
 
-    /* agregar funcionalidad de borrar y editar
-    
-        const funcionActualizar = (e) => {
-    
-            if (id !== 1 && id !== 2 && id !== 0) {
-                alert(idnuevo)
-    
-            }
-        }
-    
-    
-        const funcionEditar = (id, nombre, comentario) => {
-    
-    
-        }
-    
-        useEffect(() => {
-    
-    
-        }, [])
-    
-    
-                     <button type="submit" className='boton' mx-auto onClick={funcionEditar(arrayCrud.idnuevo, arrayCrud.nombre, arrayCrud.comentario)}>
-                            Editar
-                        </button>
-    
-                        <button type="submit" className='boton' mx-auto onClick={(e) => funcionActualizar(e)}>
-                            Actualizar
-                        </button>
-    
-    
-    */
 
 
     return (
 
+<div>
+
+
+<div>
+
+
+
+
+
+<div className="cards row row-cols-1 row-cols-lg-3 g-4 mt-4">
+  {
+
+
+    cardsPpal.map((elemento) => {
+
+
+
+      return (
+        <div className=' ' key={elemento.id}>
+
+          <div class="col">
+            <div class="card p-4 voluntariosCard" >
+              <img src={elemento.imagen} class="card-img-top cover" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title text-center display-3 text-muted fs-1" ><strong>{elemento.nombre} </strong></h4>
+                
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+
+
+      );
+
+
+    })}
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+        
         <div className="formulario">
 
             <form >
             <h4 class="card-title text-center display-3 text-muted fs-1" > Dejanos tus comentarios</h4>
-                <div className=" formulario form-row" >
+                
+                <div className="form-row" >
                     <div class="col">
                         <input type="text" class="form-control" placeholder="Nombre y apellido"
                             onChange={(e) => setNombre(e.target.value)} />
@@ -104,6 +182,7 @@ function Pruebacrud() {
 
 
                 </div>
+                
             </form>
 
 
@@ -149,10 +228,16 @@ function Pruebacrud() {
 
 
         </div>
+        
+        
+        
+        
+        
+        </div>
 
     )
 
 
 }
 
-export default Pruebacrud;
+export default Voluntarios;
