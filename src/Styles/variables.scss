@@ -168,6 +168,13 @@ color: black !important;}
 margin: auto;}
 //.image {border-radius: 5px;}
 
+.fondopantallachica {
+ 
+  width: 100%;
+box-sizing: border-box !important;}
+.fondopantallagrande{width: 100%;
+box-sizing: border-box !important;}
+
  
 
   //media querie
@@ -193,6 +200,19 @@ margin: auto;}
         .card img{ width: 250px;}
         }
 
+
+        @media screen and (min-width: 900px){
+          .fondopantallachica{ display: none;
+            
+           }
+          }
+
+
+          @media screen and (max-width: 900px){
+            .fondopantallagrande{ display: none;
+              }
+            }
+  
       .navbar-nav {align-items: center !important;}
 
       .datosanimales {font-size: 1.2rem;

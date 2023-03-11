@@ -46,8 +46,8 @@ function Presentacion() {
     <div>
 
 
-      <img className="presentacion" src="presentacion.png" />
-
+      <img className="presentacion fondopantallagrande" src="presentacion.png" />
+      <img className="presentacion fondopantallachica" src="presentacionchica.png" />
 
       <div className="cards row row-cols-1 row-cols-lg-3 g-4 mt-4">
         {

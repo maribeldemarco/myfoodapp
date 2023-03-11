@@ -40,7 +40,8 @@ function Api() {
 
       <div>
          <div className='margintop-api'></div>
-         <img className='fondoapi' src="apifondo.png"></img>
+         <img className='fondoapi fondopantallagrande' src="apifondo.png"></img>
+         <img className='fondoapi fondopantallachica' src="conocelos.png"></img>
          {
             spinner === null ? <div class="text-center spinnermargen">
                <div className="spinner-border m-5 spinnersize " role="status">

@@ -7,14 +7,16 @@ function Formulario() {
         <div>
 
             <br>
-            </br>
+            </br> 
 
-<img className="fondo" src="contacto.png" alt="fondo" />
+<img className="fondopantallagrande" src="contacto.png" alt="fondo" />
+
+<img className="fondo fondopantallachica" src="formulariomediaquerie.png" alt="fondo" />
 <div className="margengeneralformulario">
 
 
 <div className="card text-bg-dark  mb-3 cuadroformulario" style={{ marginTop: "100px" }} >
-      <div className="card-header ">
+      <div className="card-header "> 
         <span style={{ "--i": 1 }}>C</span>
         <span style={{ "--i": 2 }}>o</span>
         <span style={{ "--i": 3 }}>n</span>
