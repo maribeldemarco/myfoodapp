@@ -1,12 +1,28 @@
 import Prueba from "./Prueba";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { v4 as uuid } from "uuid";
-import { useEffect } from "react";
+import  Axios  from "axios";
+
 
 
 function Voluntarios() {
 
+  const [datosVoluntarios, setVoluntarios]= useState(null);
 
+  useEffect(() => { 
+    const promesaSql = async () => {
+      const respuestaSql = await Axios.get('http://localhost:5000/myapp/test/').then((response)=> {
+        setVoluntarios(response.data)
+        console.log(datosVoluntarios)
+      })
+    }
+    promesaSql()
+  }, []);
+  
+// console.log (response.data[0].Cita) 
+
+let contador;
+contador=(-1); 
     const cardsPpal = [
 
 
@@ -104,7 +120,7 @@ function Voluntarios() {
     }
 
 
-
+     
 
     return (
 
@@ -121,8 +137,9 @@ function Voluntarios() {
   {
 
 
-    cardsPpal.map((elemento) => {
 
+    cardsPpal.map((elemento) => {
+ contador=contador+1;
 
 
       return (
@@ -132,8 +149,22 @@ function Voluntarios() {
             <div class="card p-4 voluntariosCard" >
               <img src={elemento.imagen} class="card-img-top cover" alt="..." />
               <div class="card-body">
-                <h4 class="card-title text-center display-3 text-muted fs-1" ><strong>{elemento.nombre} </strong></h4>
-                
+              {datosVoluntarios ? (
+  <div>
+    <h4 class="card-title text-center display-3 text-muted fs-1">
+      <strong>
+        {datosVoluntarios[contador].Nombre + " "} 
+        {datosVoluntarios[contador].Apellido} 
+      </strong>
+    </h4>
+    <h5 class="text-center" >{datosVoluntarios[contador].Cita}</h5>
+  </div>
+) : (
+  <h4>Loading...</h4>
+)}
+
+              
+
               </div>
             </div>
           </div>
